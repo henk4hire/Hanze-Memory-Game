@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript memory</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Michiels memory</h1>
+
+        <div>
+            Verlopen tijd: <span id="tijd">0</span> seconden.
+        </div>
+
+        <div>
+            Gevonden kaart-paren: <span id="gevonden">0</span>
+        </div>
+
+        <div>
+            Resterende toontijd: <span id="timeLeft"></span>
+            <div id="myProgress">
+                <div id="myBar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <table id="speelveld">
+            <tr>
+                <td>
+                    <div id="memory_board"></div>
+                        
+                </td>
+            </tr>
+        </table>
+
+        <table id="meta">
+            <tr>
+                <td>
+                    <h2>Top vijf</h2>
+
+                    <ol id="topscores">
+                        <!-- TOON HIER DE TOP-SCORES -->
+                        <li id=een></li>
+                        <li id=twee></li>
+                        <li id=drie></li>
+                        <li id=vier></li>
+                        <li id=vijf></li>
+                    </ol>
+
+                    <p id="test"></p>
+                    <p id="test2"></p>
+
+                    <h2>Gemiddelde speeltijd:</h2>
+
+                    <div>
+                        <span id="gemiddeld">0s</span> (<span id="afwijking">+0s</span>)
+                    </div>
+
+                    <h2>Opties</h2>
+
+                    <div>
+                        <label for="character">Karakter op kaarten</label>
+                        <select name="character" id="character">
+                            <option value="*" selected>*</option>
+                            <option value="#">#</option>
+                            <option value="@">@</option>
+                            <option value="&">&</option>
+                            <option value="%">%</option>
+                            <option value="X">X</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="size">Afmeting bord</label>
+                        <select name="size" id="size">
+                            <option value=2>2</option>
+                            <option value=4>4</option>
+                            <option value=6 selected>6</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <label for="cardStyleInactive">Kaartkleur</label>
+                        <input type="color" id="cardStyleInactive" value="#0000FF">
+                    </div>
+
+                    <div>
+                        <label for="cardStyleActive">Open</label>
+                        <input type="color" id="cardStyleActive" value="#058a00">
+                    </div>
+
+                    <div>
+                        <label for="cardStyleFound">Gevonden</label>
+                        <input type="color" id="cardStyleFound" value="#820180">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="opnieuw" onclick="newBoard();">Nieuw Spel</button>
+                </td>
+            </tr>
+        </table>
+    </main>
+<script type="text/javascript" src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) { 
+    //window.onloadend = 
+    newBoard();
+});
+</script>
+</body>
+</html>

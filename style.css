@@ -1,0 +1,79 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-size: cover;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+header {
+    text-align: center;
+    border: 0px solid black;
+    width: 70%;
+    height: auto;
+}
+
+table#speelveld {
+    border: 0px solid black;
+    width: 70%;
+    height: fit-content;
+    float: left;
+    right: 0px ;
+}
+
+table#meta {
+    border: 0px solid black;
+    width: 30%;
+    float: right;
+    right: 0px ;
+}
+
+table, th, td {
+    border: 0px solid black;
+}
+
+div#memory_board{
+    border:#999 0px solid;
+    width: 550px;
+    height: 550px;
+    padding: 8px;
+    margin: 0px auto;
+  }
+  
+  div#memory_board > div {
+    background: rgb(58, 255, 51);
+    border: #000 0px solid;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    width: 69px;
+    height: 69px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#myProgress {
+margin: auto;
+width: 30%;
+background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
